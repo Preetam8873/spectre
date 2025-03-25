@@ -364,6 +364,13 @@ body {
 <script>
     // Video player controls can be added here if needed
 </script>
+
+    if (window.location.pathname.endsWith(".html")) {
+      let newUrl = window.location.pathname.replace(".html", "") + window.location.search;
+      history.replaceState(null, "", newUrl);
+    }
+  
+  
                 <div class="video-info">
                     <p>Uploaded by <span id="video-uploader"></span></p>
                     <p id="video-description"></p>
