@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/cosmic-search.css">
+
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Spectre Hub - A modern video-streaming website by Preetam Singh">
+  <meta name="keywords" content="video sharing, Spectre Hub, Preetam Singh">
+  <meta name="author" content="Preetam Singh">
+
+  <!-- Open Graph Meta Tags for WhatsApp/Social Media -->
+  <meta property="og:title" content="Spectre Hub">
+  <meta property="og:description" content="A modern video-streaming platform created by Preetam Singh. Explore and share videos effortlessly!">
+  <meta property="og:url" content="https://spectre-five.vercel.app/"> <!-- Replace with your actual website URL -->
+  <meta property="og:image" content="https://i.postimg.cc/W1VXJ1R7/7-YU251f-Al-Qx-RWTUj-generated-image.jpg"> <!-- Replace with your actual image URL -->
+  <meta property="og:type" content="website">
+
+  <!-- Favicon for different sizes -->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/15px.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/32px.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon/64.png">
+  
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  
+  <!-- Microsoft Windows Tiles -->
+  <meta name="msapplication-TileImage" content="favicon/256.png">
+  
+  <!-- Favicon for modern browsers -->
+  <link rel="shortcut icon" href="favicon/256.png">
+
+  <title>Spectre Hub</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 class="logo"><a href="#" class="animated-logo">Spectre Hub</a></h1>
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search videos...">
+      </div>
+      
+      <button id="theme-toggle" aria-label="Toggle dark/light mode" aria-pressed="false">
+        <span id="toggle-thumb"></span>
+        
+        <!-- Theme icons -->
+        <svg id="toggle-icon-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2a7 7 0 1 1 0-14 7 7 0 0 1 0 14zM12 4.5a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 1 0v2a.5.5 0 0 1-.5.5zM18.3 6.7a.5.5 0 0 1-.7 0 .5.5 0 0 1 0-.7l1.4-1.4a.5.5 0 0 1 .7.7L18.3 6.7zM20 12.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM18.3 18.3a.5.5 0 0 1 0-.7l1.4-1.4a.5.5 0 0 1 .7.7l-1.4 1.4a.5.5 0 0 1-.7 0zM12 20.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5zM5.7 18.3a.5.5 0 0 1 0 .7l-1.4 1.4a.5.5 0 0 1-.7-.7l1.4-1.4a.5.5 0 0 1 .7 0zM4.5 12a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM5.7 5.7a.5.5 0 0 1-.7 0L3.6 4.3a.5.5 0 0 1 .7-.7l1.4 1.4a.5.5 0 0 1 0 .7z"/>
+        </svg>
+        
+        <svg id="toggle-icon-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+        </svg>
+        
+        <!-- Decorative elements -->
+        <div class="toggle-stars">
+            <div class="toggle-star"></div>
+            <div class="toggle-star"></div>
+            <div class="toggle-star"></div>
+            <div class="toggle-star"></div>
+            <div class="toggle-star"></div>
+        </div>
+        
+        <div class="toggle-clouds">
+            <div class="toggle-cloud"></div>
+            <div class="toggle-cloud"></div>
+        </div>
+      </button>
+      
+      <div class="theme-ripple"></div>
+    </div>
+  </header>
+
+  <section class="video-grid container" id="video-grid">
+    <!-- Video cards will be dynamically added via JavaScript -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
